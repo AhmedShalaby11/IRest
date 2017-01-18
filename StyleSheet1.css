@@ -1,0 +1,235 @@
+﻿body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 5px 0 5px 0;
+      letter-spacing: 5px;      
+      font-size: 20px;
+      color: #111;
+  }
+  h1 {
+      margin-right: auto;
+      margin-left: 0px;
+      margin-bottom: 30%;
+      width: 570px;
+      font-family: 'Futura LT Book';
+      font-weight: bold;
+      font-size:45px;
+      text-align:left;
+}
+  .container1 {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {b-webkit-filter: grayscale(90%);
+      filter: grayscale(20%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+      text-align:center;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: normal;}
+  .bg-2 {
+      background: #fff;
+      color: #777;
+      text-align:center;
+  }
+  .bg-2 h3 {color: #000;}
+  .bg-2 p {font-style: normal;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+      font-size: 11px;
+
+  }
+  .dropdown-menu li a:hover {
+      background-color: darkred !important;
+  }
+  
+
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+
+  #DRINKS{
+      
+  }
+
+   #CONTACTUS{
+ 
+  }
+
+    table {
+    border-collapse: collapse;
+    width: 98%;
+    font: 400 15px/1.8 Lato, sans-serif;
+    background-color: white;
+    color: black;
+   
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2; color:#2d2d30;}
+
+th {
+    background-color: #2d2d30;
+    color: white;
+    font-weight:lighter;
+}
+
+.check
+{
+	color:#996;
+	background-color:darkred;
+	
+}
+   
+
+
+
+
+
