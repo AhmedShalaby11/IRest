@@ -18,6 +18,23 @@
       font-size:45px;
       text-align:left;
 }
+
+
+.onscreen
+{
+     display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .95;
+    filter:alpha(opacity=40);
+    visibility:hidden;
+}
   .container1 {
     position: relative;
     width: 100%;

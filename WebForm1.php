@@ -10,27 +10,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-  <link href="StyleSheet1.css" rel="stylesheet" />
+  <link href="StyleSheet1.css" rel="stylesheet"></link>
     
 <script>
+//1.a: read the values from the GUI on a container's click. 
 $(document).ready(function(){
-  $(".container1").click(function (){
+  $(".container1").click(
+    function(){
 var productName = $(this).find('h3:first').text();
 var productPrice = $(this).find('h3:last').text();
-var productQuan = $("#text_quan").text();
 
- window.location.href = "webForm1.php?Order=" + 
- productName+","+productPrice.split(" ");
+$('.onscreen').css("visibility","visible");
+$("#button_order").click(function(){
 
-  
+var productQuan = $("#itemQuan").val();
+  //function: no 0 items
+  if (productQuan == "")
+  {
+    $('#setOrderItem_div').append("<h3 style='color:white' id='notif'>Cannot Order 0 items.</h3>"); 
+  }
+else{
+  $("#notif").remove();
+ window.location.href = "webform1.php?Order=" + 
+ productName+","+productPrice.split(" ")+","+productQuan;
+ //set the onscreen visibility to :hidden  !important;
+}
+});
+
   });
-  });
+});
+
 
 </script>
 
 
 
-</head>w
+</head>
+<div class='onscreen'><div id='setOrderItem_div' class='container'><input type='text' id='itemQuan' style='width:200px;'  placeholder='Quantaity' ></input>     <button class='btn btn-danger'  id='button_order' >Add to list</button></div></div>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- Navigation bar -->
 
@@ -154,7 +170,6 @@ echo "
     <div>
     <h3>".$row[1]."</h3> 
     <h3>".$row[4]." EGP</h3>
-     <input class='btn btn-danger' id='button_order' type='submit' value='Add to list'/>
     </div>
             </div>
   </div>
@@ -267,13 +282,8 @@ echo "</br>";
     ?>
     <!--begin-->
 <script>
-$(document).ready(function(){
-  $("#button_order").mouseover(function(){
-$("#table_order").append("<thead><tr><th>Product</th><th>Quantity</th><th>Amount</th></tr></thead><tbody>");
-$("#table_order tbody").append("<tr><td>"+productName+"</td><td>"+productPrice+"</td><td>xx</td>");
 
-  });
-});
+
 </script>
 <!-- Container (YOUR_ORDER) -->
 <div id="YOUR_ORDER" class="bg-1">
