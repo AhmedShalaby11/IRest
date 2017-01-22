@@ -2,11 +2,11 @@ IRestaurant Projcet
 ===================
 Development phase.
 -----TO DO-----
-1.make an order and insert it in the database.
-2.read from database and view the order on screen.
-3.calculate the discount for the total order.
-4.submit the order.
-5.create the kitchen view with RWUD.
-6.create an adminstration view to ctrl products.
+1.make an order and insert it in the database.done
+2.read from database and view the order on screen. done
+3.calculate the discount for the total order. done
+4.submit the order.done
+5.create the kitchen view with RWUD. --- update the finished record 
+6.create an adminstration view to ctrl products. done
 ====================================================
 -- Search for Begin as a start up keyword.  

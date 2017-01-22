@@ -4,7 +4,7 @@
   }
   h3, h4 {
       margin: 5px 0 5px 0;
-      letter-spacing: 5px;      
+      letter-spacing: 5px;
       font-size: 20px;
       color: #111;
   }
@@ -34,6 +34,10 @@
     opacity: .95;
     filter:alpha(opacity=40);
     visibility:hidden;
+    width: 400px;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: 10%;
 }
   .container1 {
     position: relative;
@@ -80,7 +84,7 @@
       border-color: #f1f1f1;
   }
   .carousel-inner img {b-webkit-filter: grayscale(90%);
-      filter: grayscale(20%); /* make all photos black and white */ 
+      filter: grayscale(20%); /* make all photos black and white */
       width: 100%; /* Set width to 100% */
       margin: auto;
   }
@@ -152,7 +156,7 @@
       height: 400px;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
-  }  
+  }
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -162,7 +166,7 @@
       letter-spacing: 4px;
       opacity: 0.9;
   }
-  .navbar li a, .navbar .navbar-brand { 
+  .navbar li a, .navbar .navbar-brand {
       color: #d5d5d5 !important;
   }
   .navbar-nav li a:hover {
@@ -187,7 +191,7 @@
   .dropdown-menu li a:hover {
       background-color: darkred !important;
   }
-  
+
 
   footer {
       background-color: #2d2d30;
@@ -200,7 +204,7 @@
   footer a:hover {
       color: #777;
       text-decoration: none;
-  }  
+  }
   .form-control {
       border-radius: 0;
   }
@@ -209,11 +213,11 @@
   }
 
   #DRINKS{
-      
+
   }
 
    #CONTACTUS{
- 
+
   }
 
     table {
@@ -222,7 +226,7 @@
     font: 400 15px/1.8 Lato, sans-serif;
     background-color: white;
     color: black;
-   
+
 }
 
 th, td {
@@ -242,11 +246,5 @@ th {
 {
 	color:#996;
 	background-color:darkred;
-	
+
 }
-   
-
-
-
-
-
